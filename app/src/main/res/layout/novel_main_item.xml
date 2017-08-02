@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    android:elevation="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/novel_item_picture"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/meizi"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/novel_item_picture"
+            >
+
+            <TextView
+                android:id="@+id/novel_item_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="九州缥缈录"
+                android:maxLines="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="18sp"
+                />
+            <TextView
+                android:id="@+id/novel_item_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当这个世界就要崩溃，当星辰和阳光也熄灭，沉默已久的乱世之轮重新开始运转，英雄们即将相遇。伟大的创造，就此开始。这是一个悲哀的年代。英雄们刚刚诞生在钢铁的摇篮中，世界在动荡和战火中挣扎。"
+                android:maxLines="4"
+                android:padding="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+                <ProgressBar
+                    android:id="@+id/novel_item_progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@null"/>
+
+                <TextView
+                    android:id="@+id/novel_item_progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="56%"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</android.support.v7.widget.CardView>

@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorYellow">#FFF181</color>
+    <color name="colorBlack">#000</color>
+    <color name="transport">#888</color>
+    <color name="darkgreen">#00bfa5</color>
+
 </resources>
